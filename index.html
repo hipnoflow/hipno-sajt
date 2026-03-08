@@ -4,14 +4,127 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Hipno & Regresoterapija</title>
+<!-- Google font besplatno -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<!-- Font Awesome ikone besplatno -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
 <style>
-body {margin:0; font-family:'Arial', sans-serif; background:#f4f4f9; color:#111;}
-header {background:#4B0082; color:white; text-align:center; padding:60px 20px;}
-header h1 {font-size:40px; margin:0;}
-header p {font-size:18px; margin-top:10px;}
-section {padding:40px 20px; text-align:center;}
-button {padding:12px 25px; font-size:16px; border:none; border-radius:6px; background:#007BFF; color:#fff; cursor:pointer;}
-button:hover {background:#0056b3;}
+/* Osnovni stil sajta */
+body {
+  margin:0;
+  font-family:'Roboto', sans-serif;
+  background:#f4f4f9;
+  color:#111;
+}
+
+/* Header sa pozadinskom slikom */
+header {
+  background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1350&q=80');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 120px 20px;
+}
+
+header h1 {font-size:50px; margin:0;}
+header p {font-size:22px; margin-top:10px;}
+
+/* Sekcije */
+section {
+  padding:60px 20px;
+  text-align:center;
+}
+
+h2 {
+  font-size:32px;
+  margin-bottom:30px;
+}
+
+/* Kartice za usluge */
+.cards {
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:30px;
+  margin-top:40px;
+}
+
+.card {
+  background:#fff;
+  padding:25px;
+  border-radius:20px;
+  box-shadow:0 8px 25px rgba(0,0,0,0.1);
+  width:280px;
+  transition:0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow:0 12px 30px rgba(0,0,0,0.15);
+}
+
+/* Dugmad */
+button {
+  padding:15px 35px;
+  font-size:18px;
+  border:none;
+  border-radius:10px;
+  background:#4B0082;
+  color:#fff;
+  cursor:pointer;
+  transition:0.3s;
+  margin-top:20px;
+}
+
+button:hover {background:#2E004C;}
+
+/* Kontakt forma */
+form {
+  margin-top:50px;
+  display:flex;
+  flex-direction:column;
+  max-width:450px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+input, textarea {
+  margin:12px 0;
+  padding:14px;
+  border-radius:8px;
+  border:1px solid #ccc;
+  font-size:16px;
+}
+
+input[type="submit"] {
+  background:#4B0082;
+  color:white;
+  border:none;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+input[type="submit"]:hover {background:#2E004C;}
+
+/* Footer */
+footer {
+  background:#2E004C;
+  color:white;
+  text-align:center;
+  padding:30px 20px;
+  margin-top:60px;
+}
+
+footer a {
+  color:#fff;
+  margin:0 10px;
+  text-decoration:none;
+  font-size:20px;
+}
+
+footer a:hover {color:#FFC107;}
 </style>
 </head>
 <body>
@@ -19,12 +132,40 @@ button:hover {background:#0056b3;}
 <header>
   <h1>Hipno & Regresoterapija</h1>
   <p>Oslobodi svoj um i stres</p>
+  <button>Rezerviši seansu</button>
 </header>
 
 <section>
-  <h2>Naše usluge</h2>
-  <button>Kontaktiraj nas</button>
+  <h2>O meni</h2>
+  <p>Zovem se [Tvoje ime], sertifikovani hipnoterapeut i regresoterapeut sa višegodišnjim iskustvom. Pomogao sam mnogim klijentima da pronađu unutrašnji mir i oslobode se stresa.</p>
 </section>
+
+<section>
+  <h2>Usluge</h2>
+  <div class="cards">
+    <div class="card"><i class="fa-solid fa-person-running fa-2xl"></i><h3>Hipnoza</h3><p>Individualne seanse za opuštanje i fokus.</p></div>
+    <div class="card"><i class="fa-solid fa-brain fa-2xl"></i><h3>Regresoterapija</h3><p>Otkrivanje i razrešavanje starih trauma.</p></div>
+    <div class="card"><i class="fa-solid fa-laptop fa-2xl"></i><h3>Online seanse</h3><p>Udobno i sigurno iz svog doma.</p></div>
+  </div>
+</section>
+
+<section>
+<h2>Kontakt / Rezervacija</h2>
+<form>
+  <input type="text" placeholder="Ime i prezime" required>
+  <input type="email" placeholder="Email" required>
+  <textarea placeholder="Poruka / pitanje" rows="5" required></textarea>
+  <input type="submit" value="Pošalji">
+</form>
+</section>
+
+<footer>
+  <p>Prati me na društvenim mrežama:</p>
+  <a href="#"><i class="fa-brands fa-facebook"></i></a>
+  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+  <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+  <p>&copy; 2026 Hipno & Regresoterapija</p>
+</footer>
 
 </body>
 </html>
