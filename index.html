@@ -15,6 +15,7 @@ header {
   color: white;
   text-align: center;
   padding: 120px 20px;
+  position: relative;
 }
 header h1 {font-size:50px; margin:0;}
 header p {font-size:22px; margin-top:10px;}
@@ -29,46 +30,20 @@ h2 {font-size:32px; margin-bottom:30px;}
 footer {background:#2E004C; color:white; text-align:center; padding:30px 20px; margin-top:60px;}
 footer a {color:#fff; margin:0 10px; text-decoration:none; font-size:20px;}
 footer a:hover {color:#FFC107;}
-
-/* RESPONSIVE: mobilni uređaji */
-@media (max-width: 768px) {
-  header {
-    padding: 80px 20px;
-  }
-  header h1 {
-    font-size: 32px;
-  }
-  header p {
-    font-size: 18px;
-  }
-  .cards {
-    flex-direction: column;
-    gap: 20px;
-  }
-  .card {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  h2 {
-    font-size: 24px;
-  }
-  .card h3 {
-    font-size: 20px;
-  }
-  header button {
-    padding: 12px 25px;
-    font-size: 16px;
-  }
-}
 </style>
 </head>
 <body>
 
 <header>
-<h1>Hipnoterapija & Regresoterapija</h1>
-<p>Jasnoća uma, stabilnost u odlukama i kontinuirani lični razvoj.</p>
-<button onclick="window.open('https://forms.gle/tcYWto4nmRgLiXCo8','_blank')">Rezerviši konsultaciju</button>
+  <!-- JEZIČKI MENI -->
+  <div style="position:absolute; top:20px; right:20px;">
+    <a href="index.html" style="color:white; text-decoration:none; font-weight:bold; margin-right:15px;">Srpski</a>
+    <a href="index-en.html" style="color:white; text-decoration:none; font-weight:bold;">English</a>
+  </div>
+
+  <h1>Hipnoterapija & Regresoterapija</h1>
+  <p>Jasnoća uma, stabilnost u odlukama i kontinuirani lični razvoj.</p>
+  <button onclick="window.open('https://forms.gle/tcYWto4nmRgLiXCo8','_blank')">Rezerviši konsultaciju</button>
 </header>
 
 <section>
@@ -106,23 +81,19 @@ Hipnoterapija je prostor za mirno i usredsređeno istraživanje sopstvenih poten
 <section>
 <h2>Kako izgleda hipnoterapijska seansa</h2>
 <div class="cards">
-
 <div class="card">
 <h3>Pouzdano i sigurno okruženje</h3>
-<h3 style="font-size:18px; color:#555; margin-top:5px;">Seanse u studiju i online, sa mogućnošću snimanja</h3>
-<p>Seanse se mogu održati u prijatnom i privatnom prostoru u mom studiju, ili online putem video poziva za klijente iz dijaspore. Svaka seansa može biti snimljena i dostupna za pregled kasnije.</p>
+<h3>Seanse u studiju i online, sa mogućnošću snimanja</h3>
+<p>Seanse se mogu održati u mirnom i privatnom prostoru u mom studiju ili online putem video poziva za klijente iz dijaspore. Svaka seansa može biti snimljena i dostupna za pregled kasnije.</p>
 </div>
-
 <div class="card">
 <h3>Fokusiran rad ka vašim ciljevima</h3>
 <p>Tehnike hipnoterapije i regresoterapije pomažu da se usmerite ka jasnoći, fokusu i unutrašnjoj stabilnosti.</p>
 </div>
-
 <div class="card">
 <h3>Praktičan i primenjiv rezultat</h3>
 <p>Seansa je konkretna i daje alate koje možete koristiti u svakodnevnom životu i pri donošenju važnih odluka.</p>
 </div>
-
 </div>
 </section>
 
@@ -130,26 +101,33 @@ Hipnoterapija je prostor za mirno i usredsređeno istraživanje sopstvenih poten
 <h2 style="font-size:2em; margin-bottom:30px; color:#333;">Zakazivanje seanse</h2>
 <div class="cards" style="display:flex; flex-wrap:wrap; justify-content:center; gap:20px;">
 
-  <div class="card" style="flex:1; min-width:280px; max-width:350px; padding:25px; border-radius:15px; background:white; box-shadow:0 6px 20px rgba(0,0,0,0.1); transition: transform 0.3s;">
-    <h3 style="color:#4CAF50;">Popuni formu za zakazivanje</h3>
-    <p style="color:#555;">Popunite kratku formu za zakazivanje ili dodatne informacije. Odgovori stižu direktno meni.</p>
-    <a href="https://forms.gle/tcYWto4nmRgLiXCo8" target="_blank" 
-       style="display:inline-block; padding:15px 30px; background:#4CAF50; color:white; border-radius:10px; text-decoration:none; font-weight:bold; margin-top:15px;">
-      Popuni formu
-    </a>
-  </div>
+<div class="card" style="flex:1; min-width:280px; max-width:350px; padding:25px; border-radius:15px; background:white; box-shadow:0 6px 20px rgba(0,0,0,0.1); transition: transform 0.3s;">
+<h3 style="color:#4CAF50;">Popuni formu za zakazivanje</h3>
+<p style="color:#555;">Popunite kratku formu za zakazivanje ili dodatne informacije. Odgovori stižu direktno meni.</p>
+<a href="https://forms.gle/tcYWto4nmRgLiXCo8" target="_blank" 
+style="display:inline-block; padding:15px 30px; background:#4CAF50; color:white; border-radius:10px; text-decoration:none; font-weight:bold; margin-top:15px;">
+Popuni formu
+</a>
+</div>
 
-  <div class="card" style="flex:1; min-width:280px; max-width:350px; padding:25px; border-radius:15px; background:white; box-shadow:0 6px 20px rgba(0,0,0,0.1); transition: transform 0.3s;">
-    <h3 style="color:#25D366;">Pošaljite poruku preko WhatsApp-a</h3>
-    <p style="color:#555;">Možete odmah poslati poruku i zakazati seansu.</p>
-    <a href="https://wa.me/+381628538933" target="_blank" 
-       style="display:inline-block; padding:15px 30px; background:#25D366; color:white; border-radius:10px; text-decoration:none; font-weight:bold; margin-top:15px;">
-      Pošalji poruku
-    </a>
-  </div>
+<div class="card" style="flex:1; min-width:280px; max-width:350px; padding:25px; border-radius:15px; background:white; box-shadow:0 6px 20px rgba(0,0,0,0.1); transition: transform 0.3s;">
+<h3 style="color:#25D366;">Pošaljite poruku preko WhatsApp-a</h3>
+<p style="color:#555;">Možete odmah poslati poruku i zakazati seansu.</p>
+<a href="https://wa.me/+381628538933" target="_blank" 
+style="display:inline-block; padding:15px 30px; background:#25D366; color:white; border-radius:10px; text-decoration:none; font-weight:bold; margin-top:15px;">
+Pošalji poruku
+</a>
+</div>
 
 </div>
 </section>
+
+<style>
+.cards .card:hover {
+  transform: translateY(-5px);
+  box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+</style>
 
 <footer>
 <p>Prati me na društvenim mrežama:</p>
@@ -157,6 +135,7 @@ Hipnoterapija je prostor za mirno i usredsređeno istraživanje sopstvenih poten
 <a href="#"><i class="fa-brands fa-instagram"></i></a>
 <a href="#"><i class="fa-brands fa-linkedin"></i></a>
 <p>&copy; 2026 HipnoFlow</p>
+<a href="index-en.html" style="color:white; display:block; margin-top:10px;">English</a>
 </footer>
 
 </body>
