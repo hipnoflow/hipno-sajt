@@ -26,10 +26,6 @@ h2 {font-size:32px; margin-bottom:30px;}
 .card {background:#fff; padding:25px; border-radius:20px; box-shadow:0 8px 25px rgba(0,0,0,0.1); width:280px; transition:0.3s;}
 .card:hover {transform: translateY(-10px); box-shadow:0 12px 30px rgba(0,0,0,0.15);}
 .card i {margin-bottom:10px;}
-form {margin-top:50px; display:flex; flex-direction:column; max-width:450px; margin-left:auto; margin-right:auto;}
-input, textarea {margin:12px 0; padding:14px; border-radius:8px; border:1px solid #ccc; font-size:16px;}
-input[type="submit"] {background:#4B0082; color:white; border:none; cursor:pointer; transition:0.3s;}
-input[type="submit"]:hover {background:#2E004C;}
 footer {background:#2E004C; color:white; text-align:center; padding:30px 20px; margin-top:60px;}
 footer a {color:#fff; margin:0 10px; text-decoration:none; font-size:20px;}
 footer a:hover {color:#FFC107;}
@@ -45,111 +41,96 @@ footer a:hover {color:#FFC107;}
 
 <section>
 <h2>O meni</h2>
-
 <p>
 Moje ime je Gordana Srećković. Bavim se hipnoterapijom i regresoterapijom i pružam podršku ljudima koji žele da prodube jasnoću, fokus i unutrašnju stabilnost u važnim životnim odlukama i ličnom razvoju.
 </p>
-
 <p>
 Hipnoterapija je prostor za mirno i usredsređeno istraživanje sopstvenih potencijala, jasnoće u odlukama i stabilnosti u svakodnevnom životu.
 </p>
-
 </section>
 
 <section>
 <h2>U kojim oblastima hipnoterapija može pomoći</h2>
-
 <div class="cards">
-
 <div class="card">
 <h3>Fokus i donošenje odluka</h3>
 <p>Jasniji uvid i stabilnost pri važnim životnim i profesionalnim odlukama.</p>
 </div>
-
 <div class="card">
 <h3>Stres i mentalno opterećenje</h3>
-<p>Rad sa podsvešću koji pomaže u smirivanju unutrašnje napetosti i vraćanju balansa.</p>
+<p>Pomaže u smirivanju unutrašnje napetosti i vraćanju balansa.</p>
 </div>
-
 <div class="card">
 <h3>Lični razvoj</h3>
 <p>Produbljivanje unutrašnje stabilnosti, fokusa i jasnoće u svakodnevnom životu.</p>
 </div>
-
 <div class="card">
 <h3>Samopouzdanje</h3>
 <p>Jačanje unutrašnjeg osećaja sigurnosti i stabilnosti u različitim životnim situacijama.</p>
 </div>
-
 </div>
 </section>
+
 <section>
 <h2>Kako izgleda hipnoterapijska seansa</h2>
-
 <div class="cards">
-
 <div class="card">
 <h3>Pouzdano i sigurno okruženje</h3>
 <p>Seansa se odvija u mirnom i privatnom prostoru gde možete potpuno opušteno raditi na sebi.</p>
 </div>
-
 <div class="card">
 <h3>Fokusiran rad ka vašim ciljevima</h3>
 <p>Tehnike hipnoterapije i regresoterapije pomažu da se usmerite ka jasnoći, fokusu i unutrašnjoj stabilnosti.</p>
 </div>
-
 <div class="card">
 <h3>Praktičan i primenjiv rezultat</h3>
 <p>Seansa je konkretna i daje alate koje možete koristiti u svakodnevnom životu i pri donošenju važnih odluka.</p>
 </div>
+</div>
+</section>
+
+<!-- Sekcija Zakazivanje seanse -->
+<section style="padding:50px 20px; background:#f9f9f9; text-align:center;">
+<h2 style="font-size:2em; margin-bottom:30px; color:#333;">Zakazivanje seanse</h2>
+<div class="cards" style="display:flex; flex-wrap:wrap; justify-content:center; gap:20px;">
+
+  <!-- Google Forms dugme -->
+  <div class="card" style="flex:1; min-width:280px; max-width:350px; padding:25px; border-radius:15px; background:white; box-shadow:0 6px 20px rgba(0,0,0,0.1); transition: transform 0.3s;">
+    <h3 style="color:#4CAF50;">Popuni formu za zakazivanje</h3>
+    <p style="color:#555;">Popunite kratku formu za zakazivanje ili dodatne informacije. Odgovori stižu direktno meni.</p>
+    <a href="https://forms.gle/tcYWto4nmRgLiXCo8" target="_blank" 
+       style="display:inline-block; padding:15px 30px; background:#4CAF50; color:white; border-radius:10px; text-decoration:none; font-weight:bold; margin-top:15px;">
+      Popuni formu
+    </a>
+  </div>
+
+  <!-- WhatsApp dugme -->
+  <div class="card" style="flex:1; min-width:280px; max-width:350px; padding:25px; border-radius:15px; background:white; box-shadow:0 6px 20px rgba(0,0,0,0.1); transition: transform 0.3s;">
+    <h3 style="color:#25D366;">Pošaljite poruku preko WhatsApp-a</h3>
+    <p style="color:#555;">Možete odmah poslati poruku i zakazati seansu.</p>
+    <a href="https://wa.me/+381628538933" target="_blank" 
+       style="display:inline-block; padding:15px 30px; background:#25D366; color:white; border-radius:10px; text-decoration:none; font-weight:bold; margin-top:15px;">
+      Pošalji poruku
+    </a>
+  </div>
 
 </div>
 </section>
- <section style="padding:50px 20px; background:#f9f9f9; text-align:center;">
-  <h2 style="font-size:2em; margin-bottom:30px; color:#333;">Zakazivanje seanse</h2>
 
-  <div class="cards" style="display:flex; flex-wrap:wrap; justify-content:center; gap:20px;">
-
-    <!-- Google Forms dugme -->
-    <div class="card" style="flex:1; min-width:280px; max-width:350px; padding:25px; border-radius:15px; background:white; box-shadow:0 6px 20px rgba(0,0,0,0.1); transition: transform 0.3s;">
-      <h3 style="color:#4CAF50;">Popuni formu za zakazivanje</h3>
-      <p style="color:#555;">Popunite kratku formu za zakazivanje ili dodatne informacije. Odgovori stižu direktno meni.</p>
-      <a href="https://forms.gle/tcYWto4nmRgLiXCo8" target="_blank" 
-         style="display:inline-block; padding:15px 30px; background:#4CAF50; color:white; border-radius:10px; text-decoration:none; font-weight:bold; margin-top:15px;">
-        Popuni formu
-      </a>
-    </div>
-
-    <!-- WhatsApp dugme -->
-    <div class="card" style="flex:1; min-width:280px; max-width:350px; padding:25px; border-radius:15px; background:white; box-shadow:0 6px 20px rgba(0,0,0,0.1); transition: transform 0.3s;">
-      <h3 style="color:#25D366;">Pošaljite poruku preko WhatsApp-a</h3>
-      <p style="color:#555;">Možete odmah poslati poruku i zakazati seansu.</p>
-      <a href="https://wa.me/+381628538933" target="_blank" 
-         style="display:inline-block; padding:15px 30px; background:#25D366; color:white; border-radius:10px; text-decoration:none; font-weight:bold; margin-top:15px;">
-        Pošalji poruku
-      </a>
-    </div>
-
-  </div>
-</section>
-
-<!-- Opcionalno: hover efekat za kartice -->
+<!-- Hover efekat za kartice -->
 <style>
-  .cards .card:hover {
-    transform: translateY(-5px);
-    box-shadow:0 10px 25px rgba(0,0,0,0.15);
-  }
-</style> 
-<section>
-https://forms.gle/tcYWto4nmRgLiXCo8
-</section>
+.cards .card:hover {
+  transform: translateY(-5px);
+  box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+</style>
 
 <footer>
-  <p>Prati me na društvenim mrežama:</p>
-  <a href="#"><i class="fa-brands fa-facebook"></i></a>
-  <a href="#"><i class="fa-brands fa-instagram"></i></a>
-  <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-  <p>&copy; 2026 HipnoFlow</p>
+<p>Prati me na društvenim mrežama:</p>
+<a href="#"><i class="fa-brands fa-facebook"></i></a>
+<a href="#"><i class="fa-brands fa-instagram"></i></a>
+<a href="#"><i class="fa-brands fa-linkedin"></i></a>
+<p>&copy; 2026 HipnoFlow</p>
 </footer>
 
 </body>
