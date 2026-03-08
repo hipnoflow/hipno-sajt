@@ -12,62 +12,34 @@ header {
   background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1350&q=80');
   background-size: cover;
   background-position: center;
-  color: white; 
+  color: white;
   text-align: center;
   padding: 120px 20px;
   position: relative;
 }
-header h1 {font-size:50px; margin:0;}
-header p {font-size:22px; margin-top:10px;}
-header button {padding:15px 35px; font-size:18px; border:none; border-radius:10px; background:#4B0082; color:#fff; cursor:pointer; transition:0.3s; margin-top:20px;}
+header h1 {font-size:50px;margin:0;}
+header p {font-size:22px;margin-top:10px;}
+header button {padding:15px 35px;font-size:18px;border:none;border-radius:10px;background:#4B0082;color:#fff;cursor:pointer;transition:0.3s;margin-top:20px;}
 header button:hover {background:#2E004C;}
-section {padding:60px 20px; text-align:center;}
-h2 {font-size:32px; margin-bottom:30px;}
-.cards {display:flex; justify-content:center; flex-wrap:wrap; gap:30px; margin-top:40px;}
-.card {background:#fff; padding:25px; border-radius:20px; box-shadow:0 8px 25px rgba(0,0,0,0.1); width:280px; transition:0.3s;}
-.card:hover {transform: translateY(-10px); box-shadow:0 12px 30px rgba(0,0,0,0.15);}
-.card i {margin-bottom:10px;}
-footer {background:#2E004C; color:white; text-align:center; padding:30px 20px; margin-top:60px;}
-footer a {color:#fff; margin:0 10px; text-decoration:none; font-size:20px;}
+section {padding:60px 20px;text-align:center;}
+h2 {font-size:32px;margin-bottom:30px;}
+.cards {display:flex;justify-content:center;flex-wrap:wrap;gap:30px;margin-top:40px;}
+.card {background:#fff;padding:25px;border-radius:20px;box-shadow:0 8px 25px rgba(0,0,0,0.1);width:280px;transition:0.3s;}
+.card:hover {transform: translateY(-10px);box-shadow:0 12px 30px rgba(0,0,0,0.15);}
+footer {background:#2E004C;color:white;text-align:center;padding:30px 20px;margin-top:60px;}
+footer a {color:#fff;margin:0 10px;text-decoration:none;font-size:20px;}
 footer a:hover {color:#FFC107;}
 
 /* Mobile optimization */
 @media (max-width: 600px) {
-  header h1 { font-size: 32px; }
-  header p { font-size: 16px; }
-  header button { padding: 10px 20px; font-size: 14px; }
-
-  header div { 
-    position: static; 
-    margin-bottom: 15px; 
-    text-align: center;
-  }
-  header div a { 
-    display: inline-block; 
-    margin: 0 10px; 
-    font-size: 14px; 
-  }
-
-  .cards { flex-direction: column; gap: 20px; }
-  .card { width: 90%; max-width: 400px; margin: 0 auto; }
-}
-  /* Poboljšan header za male ekrane */
-@media (max-width: 600px) {
-  header {
-    padding: 80px 15px; /* manje sa svih strana */
-  }
-  header h1 {
-    font-size: 28px;   /* smanjeno za mobilne ekrane */
-    line-height: 1.2;  /* da ne bude previše visine */
-  }
-  header p {
-    font-size: 14px;   /* manji tekst */
-    line-height: 1.4;
-  }
-  header button {
-    padding: 10px 18px;
-    font-size: 14px;
-  }
+  header {padding:80px 15px;}
+  header h1 {font-size:28px;line-height:1.2;}
+  header p {font-size:14px;line-height:1.4;}
+  header button {padding:10px 18px;font-size:14px;}
+  header div {position:static;margin-bottom:15px;text-align:center;}
+  header div a {display:inline-block;margin:0 10px;font-size:14px;}
+  .cards {flex-direction:column;gap:20px;}
+  .card {width:90%;max-width:400px;margin:0 auto;}
 }
 </style>
 </head>
@@ -87,33 +59,17 @@ footer a:hover {color:#FFC107;}
 
 <section>
 <h2>O meni</h2>
-<p>
-Moje ime je Gordana Srećković. Bavim se hipnoterapijom i regresoterapijom i pružam podršku ljudima koji žele da prodube jasnoću, fokus i unutrašnju stabilnost u važnim životnim odlukama i ličnom razvoju.
-</p>
-<p>
-Hipnoterapija je prostor za mirno i usredsređeno istraživanje sopstvenih potencijala, jasnoće u odlukama i stabilnosti u svakodnevnom životu.
-</p>
+<p>Moje ime je Gordana Srećković. Bavim se hipnoterapijom i regresoterapijom i pružam podršku ljudima koji žele da prodube jasnoću, fokus i unutrašnju stabilnost u važnim životnim odlukama i ličnom razvoju.</p>
+<p>Hipnoterapija je prostor za mirno i usredsređeno istraživanje sopstvenih potencijala, jasnoće u odlukama i stabilnosti u svakodnevnom životu.</p>
 </section>
 
 <section>
 <h2>U kojim oblastima hipnoterapija može pomoći</h2>
 <div class="cards">
-<div class="card">
-<h3>Fokus i donošenje odluka</h3>
-<p>Jasniji uvid i stabilnost pri važnim životnim i profesionalnim odlukama.</p>
-</div>
-<div class="card">
-<h3>Stres i mentalno opterećenje</h3>
-<p>Pomaže u smirivanju unutrašnje napetosti i vraćanju balansa.</p>
-</div>
-<div class="card">
-<h3>Lični razvoj</h3>
-<p>Produbljivanje unutrašnje stabilnosti, fokusa i jasnoće u svakodnevnom životu.</p>
-</div>
-<div class="card">
-<h3>Samopouzdanje</h3>
-<p>Jačanje unutrašnjeg osećaja sigurnosti i stabilnosti u različitim životnim situacijama.</p>
-</div>
+<div class="card"><h3>Fokus i donošenje odluka</h3><p>Jasniji uvid i stabilnost pri važnim životnim i profesionalnim odlukama.</p></div>
+<div class="card"><h3>Stres i mentalno opterećenje</h3><p>Pomaže u smirivanju unutrašnje napetosti i vraćanju balansa.</p></div>
+<div class="card"><h3>Lični razvoj</h3><p>Produbljivanje unutrašnje stabilnosti, fokusa i jasnoće u svakodnevnom životu.</p></div>
+<div class="card"><h3>Samopouzdanje</h3><p>Jačanje unutrašnjeg osećaja sigurnosti i stabilnosti u različitim životnim situacijama.</p></div>
 </div>
 </section>
 
@@ -137,29 +93,29 @@ Hipnoterapija je prostor za mirno i usredsređeno istraživanje sopstvenih poten
 </section>
 
 <section style="padding:50px 20px; background:#f9f9f9; text-align:center;">
-  <h2 style="font-size:2em; margin-bottom:30px; color:#333;">Rezerviši seansu / Book a Session</h2>
+<h2 style="font-size:2em; margin-bottom:30px; color:#333;">Zakazivanje seanse</h2>
+<div class="cards" style="display:flex; flex-wrap:wrap; justify-content:center; gap:20px;">
 
-  <div class="cards" style="display:flex; flex-wrap:wrap; justify-content:center; gap:20px;">
-    
-    <!-- Srpska verzija forme -->
-    <div class="card" style="flex:1; min-width:280px; max-width:400px; padding:25px; border-radius:15px; background:white; box-shadow:0 6px 20px rgba(0,0,0,0.1);">
-      
-      <h3 style="color:#4B0082; margin-bottom:15px;">Pošalji poruku direktno meni</h3>
-      <p style="color:#555; margin-bottom:20px;">
-        Popuni formu i poruka će stići direktno na moj email. Odgovoriću što pre.
-      </p>
-      
-      <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" style="display:flex; flex-direction:column;">
-        <input type="text" name="name" placeholder="Ime" required style="margin:10px 0; padding:12px; border-radius:8px; border:1px solid #ccc; font-size:16px;">
-        <input type="email" name="email" placeholder="Email" required style="margin:10px 0; padding:12px; border-radius:8px; border:1px solid #ccc; font-size:16px;">
-        <input type="text" name="phone" placeholder="Telefon (opciono)" style="margin:10px 0; padding:12px; border-radius:8px; border:1px solid #ccc; font-size:16px;">
-        <textarea name="message" placeholder="Poruka" required style="margin:10px 0; padding:12px; border-radius:8px; border:1px solid #ccc; font-size:16px; resize:vertical;"></textarea>
-        <button type="submit" style="padding:15px; background:#4B0082; color:white; border:none; border-radius:10px; font-size:16px; cursor:pointer; margin-top:10px;">
-          Pošalji
-        </button>
-      </form>
+<div class="card" style="flex:1; min-width:280px; max-width:400px; padding:25px; border-radius:15px; background:white; box-shadow:0 6px 20px rgba(0,0,0,0.1);">
+<h3 style="color:#4B0082; margin-bottom:15px;">Pošaljite poruku direktno</h3>
+<p style="color:#555; margin-bottom:20px;">Popunite formu ispod i vaša poruka će stići direktno meni. Odgovori stižu na email.</p>
+<form action="https://formspree.io/f/mkoqowee" method="POST" style="display:flex; flex-direction:column;">
+<input type="text" name="name" placeholder="Ime" required style="margin:10px 0; padding:12px; border-radius:8px; border:1px solid #ccc; font-size:16px;">
+<input type="email" name="email" placeholder="Email" required style="margin:10px 0; padding:12px; border-radius:8px; border:1px solid #ccc; font-size:16px;">
+<input type="text" name="phone" placeholder="Telefon (opciono)" style="margin:10px 0; padding:12px; border-radius:8px; border:1px solid #ccc; font-size:16px;">
+<textarea name="message" placeholder="Poruka" required style="margin:10px 0; padding:12px; border-radius:8px; border:1px solid #ccc; font-size:16px; resize:vertical;"></textarea>
+<button type="submit" style="padding:15px; background:#4B0082; color:white; border:none; border-radius:10px; font-size:16px; cursor:pointer; margin-top:10px;">Pošalji</button>
+</form>
+</div>
 
-    </div>
+<div class="card" style="flex:1; min-width:280px; max-width:400px; padding:25px; border-radius:15px; background:white; box-shadow:0 6px 20px rgba(0,0,0,0.1);">
+<h3 style="color:#25D366;">Pošaljite poruku preko WhatsApp-a</h3>
+<p style="color:#555;">Možete odmah poslati poruku i zakazati seansu.</p>
+<a href="https://wa.me/+381628538933" target="_blank" 
+style="display:inline-block; padding:15px 30px; background:#25D366; color:white; border-radius:10px; text-decoration:none; font-weight:bold; margin-top:15px;">Pošalji poruku</a>
+</div>
+
+</div>
 </section>
 
 <footer>
