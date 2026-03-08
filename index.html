@@ -12,7 +12,7 @@ header {
   background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1350&q=80');
   background-size: cover;
   background-position: center;
-  color: white;
+  color: white; 
   text-align: center;
   padding: 120px 20px;
   position: relative;
@@ -30,6 +30,27 @@ h2 {font-size:32px; margin-bottom:30px;}
 footer {background:#2E004C; color:white; text-align:center; padding:30px 20px; margin-top:60px;}
 footer a {color:#fff; margin:0 10px; text-decoration:none; font-size:20px;}
 footer a:hover {color:#FFC107;}
+
+/* Mobile optimization */
+@media (max-width: 600px) {
+  header h1 { font-size: 32px; }
+  header p { font-size: 16px; }
+  header button { padding: 10px 20px; font-size: 14px; }
+
+  header div { 
+    position: static; 
+    margin-bottom: 15px; 
+    text-align: center;
+  }
+  header div a { 
+    display: inline-block; 
+    margin: 0 10px; 
+    font-size: 14px; 
+  }
+
+  .cards { flex-direction: column; gap: 20px; }
+  .card { width: 90%; max-width: 400px; margin: 0 auto; }
+}
 </style>
 </head>
 <body>
@@ -121,13 +142,6 @@ Pošalji poruku
 
 </div>
 </section>
-
-<style>
-.cards .card:hover {
-  transform: translateY(-5px);
-  box-shadow:0 10px 25px rgba(0,0,0,0.15);
-}
-</style>
 
 <footer>
 <p>Prati me na društvenim mrežama:</p>
