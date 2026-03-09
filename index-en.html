@@ -11,8 +11,8 @@ body {margin:0;font-family:'Roboto',sans-serif;background:#f4f4f9;color:#111;}
 header {background-image:url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1350&q=80');background-size:cover;background-position:center;color:white;text-align:center;padding:120px 20px;position:relative;}
 header h1{font-size:50px;margin:0;}
 header p{font-size:22px;margin-top:10px;}
-header button{padding:15px 35px;font-size:18px;border:none;border-radius:10px;background:#4B0082;color:white;cursor:pointer;transition:0.3s;margin-top:20px;}
-header button:hover{background:#2E004C;}
+header button{padding:15px 35px;font-size:18px;border:none;border-radius:10px;background:#5F9FD6;color:white;cursor:pointer;transition:0.3s;margin-top:20px;}
+header button:hover{background:#4B7FB0;}
 section{padding:60px 20px;text-align:center;}
 h2{font-size:32px;margin-bottom:30px;}
 .cards{display:flex;justify-content:center;flex-wrap:wrap;gap:30px;margin-top:40px;}
@@ -43,53 +43,71 @@ header div a{display:inline-block;margin:0 10px;font-size:14px;}
     <a href="index-en.html" style="color:white;text-decoration:none;font-weight:bold;">English</a>
   </div>
   <h1>Hypnotherapy & Regression Therapy</h1>
-  <p>Clarity of mind, stability in decision-making, and continuous personal growth.</p>
-  <button onclick="window.open('https://formspree.io/f/YOUR_FORM_ID','_blank')">Book a Consultation</button>
+  <p>Clarity of mind, stability in decisions, and continuous personal growth.</p>
+  <button onclick="document.getElementById('form').scrollIntoView({behavior:'smooth'})">Book a Consultation</button>
 </header>
 
 <section>
 <h2>About Me</h2>
-<p>My name is Gordana Srećković. I provide hypnotherapy and regression therapy, supporting clients who want to deepen clarity, focus, and inner stability in important life decisions and personal growth.</p>
-<p>Hypnotherapy offers a space for calm and focused exploration of your potentials, clarity in decision-making, and stability in everyday life.</p>
+<p>My name is Gordana Srećković. I practice hypnotherapy and regression therapy, supporting people who want to deepen clarity, focus, and inner stability in important life decisions and personal development.</p>
+<p>Hypnotherapy is a space for calm and focused exploration of your potential, clarity in decision-making, and stability in daily life.</p>
 </section>
 
 <section>
-<h2>How Hypnotherapy Can Help</h2>
+<h2>Areas Where Hypnotherapy Can Help</h2>
 <div class="cards">
-<div class="card"><h3>Focus and Decision-Making</h3><p>Gain clearer insight and stability in important personal and professional decisions.</p></div>
-<div class="card"><h3>Stress and Mental Load</h3><p>Helps to reduce inner tension and restore balance.</p></div>
-<div class="card"><h3>Personal Growth</h3><p>Deepen inner stability, focus, and clarity in everyday life.</p></div>
-<div class="card"><h3>Self-Confidence</h3><p>Strengthen your inner sense of security and stability in various life situations.</p></div>
+  <div class="card"><h3>Focus & Decision-Making</h3><p>Clearer insight and stability in important personal and professional decisions.</p></div>
+  <div class="card"><h3>Stress & Mental Load</h3><p>Helps calm inner tension and restore balance.</p></div>
+  <div class="card"><h3>Personal Development</h3><p>Deepening inner stability, focus, and clarity in everyday life.</p></div>
+  <div class="card"><h3>Self-Confidence</h3><p>Strengthening inner sense of security and stability in various life situations.</p></div>
 </div>
 </section>
 
 <section>
 <h2>What a Hypnotherapy Session Looks Like</h2>
 <div class="cards">
-<div class="card">
-<h3>Safe and Trustworthy Environment</h3>
-<h3>Sessions in studio and online, with recording option</h3>
-<p>Sessions can take place in a calm and private studio space or online via video call for clients abroad. Each session can be recorded and available for later review.</p>
-</div>
-<div class="card"><h3>Focused Work Towards Your Goals</h3><p>Hypnotherapy and regression techniques help you concentrate on clarity, focus, and inner stability.</p></div>
-<div class="card"><h3>Practical and Applicable Results</h3><p>The session is concrete and provides tools you can use in daily life and important decision-making.</p></div>
+  <div class="card">
+    <h3>Safe and Trustworthy Environment</h3>
+    <h3>Sessions in Studio or Online, with Recording Option</h3>
+    <p>Sessions can take place in a calm, private studio space or online via video call for clients abroad. Each session can be recorded and made available for later review.</p>
+  </div>
+  <div class="card"><h3>Focused Work Towards Your Goals</h3><p>Hypnotherapy and regression techniques help you focus on clarity, focus, and inner stability.</p></div>
+  <div class="card"><h3>Practical, Applicable Results</h3><p>Sessions provide concrete tools that can be used in daily life and decision-making.</p></div>
 </div>
 </section>
 
-<section style="padding:50px 20px;background:#f9f9f9;text-align:center;">
-<h2 style="font-size:2em;margin-bottom:30px;color:#333;">Book a Session</h2>
-<div class="cards" style="display:flex;flex-wrap:wrap;justify-content:center;gap:20px;">
-  <div class="card" style="flex:1;min-width:280px;max-width:350px;padding:25px;border-radius:15px;background:white;box-shadow:0 6px 20px rgba(0,0,0,0.1);">
-    <h3 style="color:#4B0082;">Book a Consultation</h3>
-    <p style="color:#555;">Complete a short form to book a session or for more information. Responses go directly to me.</p>
-    <a href="https://formspree.io/f/YOUR_FORM_ID" target="_blank" style="display:inline-block;padding:15px 30px;background:#4B0082;color:white;border-radius:10px;text-decoration:none;font-weight:bold;margin-top:15px;">Fill Form</a>
+<section id="form" style="padding:50px 20px;background:#f9f9f9;text-align:center;">
+  <h2 style="font-size:2em;margin-bottom:30px;color:#333;">Schedule a Session</h2>
+
+  <div class="cards" style="display:flex;flex-wrap:wrap;justify-content:center;gap:20px;">
+
+    <!-- Formspree Form Card -->
+    <div class="card" style="max-width:400px;margin:0 auto;padding:25px;border-radius:15px;background:white;box-shadow:0 6px 20px rgba(0,0,0,0.1);">
+      <h3 style="color:#5F9FD6;">Book a Consultation</h3>
+      <p style="color:#555;">Fill out the short form to schedule or request more information. Responses go directly to me.</p>
+
+      <form action="https://formspree.io/f/mkoqowee" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required
+        style="width:100%;padding:10px;margin:10px 0;border-radius:8px;border:1px solid #ccc;">
+        <input type="email" name="email" placeholder="Your Email" required
+        style="width:100%;padding:10px;margin:10px 0;border-radius:8px;border:1px solid #ccc;">
+        <textarea name="message" placeholder="Your Message" required
+        style="width:100%;padding:10px;margin:10px 0;border-radius:8px;border:1px solid #ccc;"></textarea>
+        <button type="submit"
+        style="padding:15px 30px;background:#5F9FD6;color:white;border-radius:10px;border:none;font-weight:bold;margin-top:10px;cursor:pointer;">
+        Send
+        </button>
+      </form>
+    </div>
+
+    <!-- WhatsApp Card -->
+    <div class="card" style="flex:1;min-width:280px;max-width:350px;padding:25px;border-radius:15px;background:white;box-shadow:0 6px 20px rgba(0,0,0,0.1);">
+      <h3 style="color:#5F9FD6;">Send a Message</h3>
+      <p style="color:#555;">You can send a message immediately and schedule a session.</p>
+      <a href="https://wa.me/+381628538933" target="_blank" style="display:inline-block;padding:15px 30px;background:#25D366;color:white;border-radius:10px;text-decoration:none;font-weight:bold;margin-top:15px;">Send Message</a>
+    </div>
+
   </div>
-  <div class="card" style="flex:1;min-width:280px;max-width:350px;padding:25px;border-radius:15px;background:white;box-shadow:0 6px 20px rgba(0,0,0,0.1);">
-    <h3 style="color:#4B0082;">Send a Message</h3>
-    <p style="color:#555;">You can send a message immediately and book a session.</p>
-    <a href="https://wa.me/+381628538933" target="_blank" style="display:inline-block;padding:15px 30px;background:#25D366;color:white;border-radius:10px;text-decoration:none;font-weight:bold;margin-top:15px;">Send Message</a>
-  </div>
-</div>
 </section>
 
 <footer>
