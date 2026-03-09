@@ -3,17 +3,17 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>HipnoFlow</title>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<title>Hypnotherapy & Regression Therapy</title>
 <style>
+html {
+  scroll-behavior: smooth;
+}
 body {
   margin: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: Arial, sans-serif;
   background: #f4f4f9;
   color: #111;
 }
-
 header {
   background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1350&q=80');
   background-size: cover;
@@ -23,43 +23,31 @@ header {
   padding: 120px 20px;
   position: relative;
 }
-
 header h1 {
-  font-size: 50px;
+  font-size: 42px;
   margin: 0;
 }
-
 header p {
-  font-size: 22px;
+  font-size: 20px;
   margin-top: 10px;
 }
-
 header button {
-  padding: 15px 35px;
+  padding: 15px 30px;
   font-size: 18px;
   border: none;
   border-radius: 10px;
   background: #4B0082;
-  color: #fff;
+  color: white;
   cursor: pointer;
-  transition: 0.3s;
   margin-top: 20px;
 }
-
 header button:hover {
   background: #2E004C;
 }
-
 section {
   padding: 60px 20px;
   text-align: center;
 }
-
-h2 {
-  font-size: 32px;
-  margin-bottom: 30px;
-}
-
 .cards {
   display: flex;
   justify-content: center;
@@ -67,87 +55,56 @@ h2 {
   gap: 30px;
   margin-top: 40px;
 }
-
 .card {
-  background: #fff;
+  background: white;
   padding: 25px;
-  border-radius: 20px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
   width: 280px;
   transition: 0.3s;
 }
-
 .card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
 }
-
-.card i {
-  margin-bottom: 10px;
+form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
-
+input, textarea {
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+form button {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+form button:hover {
+  background: #1e7e34;
+}
 footer {
   background: #2E004C;
   color: white;
   text-align: center;
-  padding: 30px 20px;
+  padding: 25px;
   margin-top: 60px;
 }
-
-footer a {
-  color: #fff;
-  margin: 0 10px;
-  text-decoration: none;
-  font-size: 20px;
-}
-
-footer a:hover {
-  color: #FFC107;
-}
-
-/* Mobile optimization */
-@media (max-width: 600px) {
-  header {
-    padding: 80px 15px;
-  }
-
-  header h1 {
-    font-size: 28px;
-    line-height: 1.2;
-  }
-
-  header p {
-    font-size: 14px;
-    line-height: 1.4;
-  }
-
-  header button {
-    padding: 10px 18px;
-    font-size: 14px;
-  }
-
-  header div { 
-    position: static; 
-    margin-bottom: 15px; 
-    text-align: center;
-  }
-
-  header div a { 
-    display: inline-block; 
-    margin: 0 10px; 
-    font-size: 14px; 
-  }
-
-  .cards {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .card {
-    width: 90%;
-    max-width: 400px;
-    margin: 0 auto;
-  }
+@media(max-width:600px){
+  header h1 { font-size: 28px; }
+  header p { font-size: 16px; }
+  header button { padding: 10px 18px; font-size: 14px; }
+  .cards { flex-direction: column; align-items: center; }
+  .card { width: 90%; max-width: 400px; }
 }
 </style>
 </head>
@@ -156,106 +113,45 @@ footer a:hover {
 <header>
   <!-- LANGUAGE MENU -->
   <div style="position:absolute; top:20px; right:20px;">
-    <a href="index.html" style="color:white; text-decoration:none; font-weight:bold; margin-right:15px;">Srpski</a>
-    <a href="index-en.html" style="color:white; text-decoration:none; font-weight:bold;">English</a>
+    <a href="index.html" style="color:white; margin-right:15px;">Srpski</a>
+    <a href="index-en.html" style="color:white;">English</a>
   </div>
 
   <h1>Hypnotherapy & Regression Therapy</h1>
-  <p>Clarity of mind, stability in decision-making, and continuous personal growth.</p>
- <button onclick="location.href='#contact'">
-Book a Consultation
-</button>
+  <p>Mental clarity, emotional balance, and personal growth.</p>
+  <button onclick="location.href='#contact'">Book a Consultation</button>
 </header>
 
 <section>
-<h2>About Me</h2>
-<p>
-My name is Gordana Srećković. I provide hypnotherapy and regression therapy, supporting clients who want to deepen clarity, focus, and inner stability in important life decisions and personal growth.
-</p>
-<p>
-Hypnotherapy offers a space for calm and focused exploration of your potentials, clarity in decision-making, and stability in everyday life.
-</p>
-</section>
-
-<section>
-<h2>How Hypnotherapy Can Help</h2>
+<h2>Services</h2>
 <div class="cards">
-<div class="card">
-<h3>Focus and Decision-Making</h3>
-<p>Gain clearer insight and stability in important personal and professional decisions.</p>
-</div>
-<div class="card">
-<h3>Stress and Mental Load</h3>
-<p>Helps to reduce inner tension and restore balance.</p>
-</div>
-<div class="card">
-<h3>Personal Growth</h3>
-<p>Deepen inner stability, focus, and clarity in everyday life.</p>
-</div>
-<div class="card">
-<h3>Self-Confidence</h3>
-<p>Strengthen your inner sense of security and stability in various life situations.</p>
-</div>
+  <div class="card">
+    <h3>Hypnotherapy</h3>
+    <p>Working with subconscious patterns and inner blocks.</p>
+  </div>
+  <div class="card">
+    <h3>Regression Therapy</h3>
+    <p>Exploring deeper emotional causes and patterns.</p>
+  </div>
+  <div class="card">
+    <h3>Personal Development</h3>
+    <p>Building mental clarity and better life decisions.</p>
+  </div>
 </div>
 </section>
 
-<section>
-<h2>What a Hypnotherapy Session Looks Like</h2>
-<div class="cards">
-<div class="card">
-<h3>Safe and Trustworthy Environment</h3>
-<h3>Sessions in studio and online, with recording option</h3>
-<p>Sessions can take place in a calm and private studio space or online via video call for clients abroad. Each session can be recorded and available for later review.</p>
-</div>
-<div class="card">
-<h3>Focused Work Towards Your Goals</h3>
-<p>Hypnotherapy and regression techniques help you concentrate on clarity, focus, and inner stability.</p>
-</div>
-<div class="card">
-<h3>Practical and Applicable Results</h3>
-<p>The session is concrete and provides tools you can use in daily life and important decision-making.</p>
-</div>
-</div>
-</section>
-
-<!-- Booking Form Section -->
-<section style="padding:50px 20px; background:#f9f9f9; text-align:center;">
-<h2 style="font-size:2em; margin-bottom:30px; color:#333;">Book a Session</h2>
-
-<div class="cards" style="display:flex; flex-wrap:wrap; justify-content:center; gap:20px;">
-
-<!-- Formspree form -->
-<div class="card" style="flex:1; min-width:280px; max-width:400px; padding:25px; border-radius:15px; background:white; box-shadow:0 6px 20px rgba(0,0,0,0.1);">
-<h3 style="color:#4CAF50;">Fill the Form</h3>
-<p style="color:#555;">Complete a short form to book a session or request more information. Responses go directly to me.</p>
-<form action="https://formspree.io/f/mkoqowee" method="POST" style="display:flex; flex-direction:column;">
-<input type="text" name="name" placeholder="Full Name" required>
-<input type="email" name="email" placeholder="Email" required>
-<input type="text" name="phone" placeholder="Phone (optional)">
-<textarea name="message" placeholder="Message" required></textarea>
-<button type="submit" style="margin-top:10px; padding:12px 25px; background:#4CAF50; color:white; border:none; border-radius:10px; cursor:pointer;">Send</button>
+<section id="contact">
+<h2>Send a Message</h2>
+<form action="https://formspree.io/f/mkoqowee" method="POST">
+  <input type="text" name="name" placeholder="Your name" required>
+  <input type="email" name="email" placeholder="Your email" required>
+  <textarea name="message" placeholder="Your message" rows="5" required></textarea>
+  <button type="submit">Send</button>
 </form>
-</div>
-
-<!-- WhatsApp booking -->
-<div class="card" style="flex:1; min-width:280px; max-width:400px; padding:25px; border-radius:15px; background:white; box-shadow:0 6px 20px rgba(0,0,0,0.1);">
-<h3 style="color:#25D366;">Send a WhatsApp Message</h3>
-<p style="color:#555;">You can send a message immediately and book a session.</p>
-<a href="https://wa.me/+381628538933" target="_blank" 
-style="display:inline-block; padding:15px 30px; background:#25D366; color:white; border-radius:10px; text-decoration:none; font-weight:bold; margin-top:15px;">
-Send Message
-</a>
-</div>
-
-</div>
 </section>
 
 <footer>
-<p>Follow me on social media:</p>
-<a href="#"><i class="fa-brands fa-facebook"></i></a>
-<a href="#"><i class="fa-brands fa-instagram"></i></a>
-<a href="#"><i class="fa-brands fa-linkedin"></i></a>
-<p>&copy; 2026 HipnoFlow</p>
+<p>© 2026 Hypnotherapy & Regression Therapy</p>
 <a href="index.html" style="color:white; display:block; margin-top:10px;">Srpski</a>
 </footer>
 
