@@ -37,6 +37,12 @@ header div a{display:inline-block;margin:0 10px;font-size:14px;}
 <body>
 
 <header>
+
+  <!-- LOGO (DODATO) -->
+  <div style="position:absolute;top:20px;left:20px;">
+    <img src="logo.png" style="height:60px;">
+  </div>
+
   <!-- Language menu -->
   <div style="position:absolute;top:20px;right:20px;">
     <a href="index.html" style="color:white;text-decoration:none;font-weight:bold;margin-right:15px;">Serbian</a>
@@ -49,6 +55,10 @@ header div a{display:inline-block;margin:0 10px;font-size:14px;}
 
 <section>
 <h2>About Me</h2>
+
+<!-- SLIKA (DODATA) -->
+<img src="gordana.jpeg" alt="Gordana" style="width:250px;border-radius:20px;margin-bottom:20px;box-shadow:0 10px 30px rgba(0,0,0,0.2);">
+
 <p>My name is Gordana Srećković.I am a certified hypnotherapist and regression therapist. I provide support to people who want to deepen clarity, focus, and inner stability.</p>
 <p>Hypnotherapy is a space for calm and focused exploration of your potential, clarity in decision-making, and stability in daily life.</p>
 </section>
@@ -81,26 +91,20 @@ header div a{display:inline-block;margin:0 10px;font-size:14px;}
 
 <div class="cards" style="display:flex;flex-wrap:wrap;justify-content:center;gap:20px;">
 
-<!-- Booking Form Card -->
 <div class="card" style="max-width:400px;margin:0 auto;padding:25px;border-radius:15px;background:white;box-shadow:0 6px 20px rgba(0,0,0,0.1);">
   <h3 style="color:#25D366;">Book a Consultation</h3>
   <p style="color:#555;">Fill out the short form to schedule a session or request more information. Replies will go directly to me.</p>
 
   <form action="https://formspree.io/f/mkoqowee" method="POST">
-    <input type="text" name="name" placeholder="Your Name" required
-    style="width:100%;padding:10px;margin:10px 0;border-radius:8px;border:1px solid #ccc;">
-    <input type="email" name="email" placeholder="Your Email" required
-    style="width:100%;padding:10px;margin:10px 0;border-radius:8px;border:1px solid #ccc;">
-    <textarea name="message" placeholder="Your Message" required
-    style="width:100%;padding:10px;margin:10px 0;border-radius:8px;border:1px solid #ccc;"></textarea>
-    <button type="submit"
-    style="padding:15px 30px;background:#25D366;color:white;border-radius:10px;border:none;font-weight:bold;margin-top:10px;cursor:pointer;">
+    <input type="text" name="name" placeholder="Your Name" required style="width:100%;padding:10px;margin:10px 0;border-radius:8px;border:1px solid #ccc;">
+    <input type="email" name="email" placeholder="Your Email" required style="width:100%;padding:10px;margin:10px 0;border-radius:8px;border:1px solid #ccc;">
+    <textarea name="message" placeholder="Your Message" required style="width:100%;padding:10px;margin:10px 0;border-radius:8px;border:1px solid #ccc;"></textarea>
+    <button type="submit" style="padding:15px 30px;background:#25D366;color:white;border-radius:10px;border:none;font-weight:bold;margin-top:10px;cursor:pointer;">
       Send
     </button>
   </form>
 </div>
 
-<!-- WhatsApp Contact Card -->
 <div class="card" style="flex:1;min-width:280px;max-width:350px;padding:25px;border-radius:15px;background:white;box-shadow:0 6px 20px rgba(0,0,0,0.1);">
   <h3 style="color:#25D366;">Send a WhatsApp Message</h3>
   <p style="color:#555;">You can immediately send a message via WhatsApp and schedule a session.</p>
@@ -123,10 +127,9 @@ header div a{display:inline-block;margin:0 10px;font-size:14px;}
 </footer>
 
 <script>
-// Smooth scroll to booking form
 document.getElementById('bookBtn').addEventListener('click', function(){
     const formSection = document.getElementById('booking-form');
-    const headerOffset = 100; // adjust if header overlaps
+    const headerOffset = 100;
     const elementPosition = formSection.getBoundingClientRect().top + window.pageYOffset;
     const offsetPosition = elementPosition - headerOffset;
 
