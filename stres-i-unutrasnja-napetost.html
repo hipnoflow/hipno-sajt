@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HipnoFlow</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+body {margin:0;font-family:'Roboto',sans-serif;background:#f4f4f9;color:#111;}
+header {background-image:url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1350&q=80');background-size:cover;background-position:center;color:white;text-align:center;padding:120px 20px;position:relative;}
+header h1{font-size:50px;margin:0;}
+header p{font-size:22px;margin-top:10px;}
+header button{padding:15px 35px;font-size:18px;border:none;border-radius:10px;background:#4B0082;color:white;cursor:pointer;transition:0.3s;margin-top:20px;}
+header button:hover{background:#2E004C;}
+section{padding:60px 20px;text-align:center;}
+h2{font-size:32px;margin-bottom:30px;}
+.cards{display:flex;justify-content:center;flex-wrap:wrap;gap:30px;margin-top:40px;}
+.card{background:#fff;padding:25px;border-radius:20px;box-shadow:0 8px 25px rgba(0,0,0,0.1);width:280px;transition:0.3s;}
+.card:hover{transform: translateY(-10px); box-shadow:0 12px 30px rgba(0,0,0,0.15);}
+.card i{margin-bottom:10px;}
+footer{background:#2E004C;color:white;text-align:center;padding:30px 20px;margin-top:60px;}
+footer a{color:white;margin:0 10px;text-decoration:none;font-size:20px;}
+footer a:hover{color:#FFC107;}
+@media(max-width:600px){
+header{padding:80px 15px;}
+header h1{font-size:28px;line-height:1.2;}
+header p{font-size:14px;line-height:1.4;}
+header button{padding:10px 18px;font-size:14px;}
+header div{position:static;margin-bottom:15px;text-align:center;}
+header div a{display:inline-block;margin:0 10px;font-size:14px;}
+.cards{flex-direction:column;gap:20px;}
+.card{width:90%;max-width:400px;margin:0 auto;}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <!-- Language menu -->
+  <div style="position:absolute;top:20px;right:20px;">
+    <a href="index.html" style="color:white;text-decoration:none;font-weight:bold;margin-right:15px;">Serbian</a>
+    <a href="index-en.html" style="color:white;text-decoration:none;font-weight:bold;">English</a>
+  </div>
+  <h1>Hypnotherapy & Regression Therapy</h1>
+  <p>Clarity of mind, stability in decisions, and continuous personal growth.</p>
+  <button id="bookBtn">Book a Consultation</button>
+</header>
+
+<section>
+<h2>About Me</h2>
+<p>My name is Gordana Srećković.I am a certified hypnotherapist and regression therapist. I provide support to people who want to deepen clarity, focus, and inner stability.</p>
+<p>Hypnotherapy is a space for calm and focused exploration of your potential, clarity in decision-making, and stability in daily life.</p>
+</section>
+
+<section>
+<h2>Areas Where Hypnotherapy Can Help</h2>
+<div class="cards">
+  <div class="card"><h3>Focus & Decision-Making</h3><p>Clearer insight and stability in important personal and professional decisions.</p></div>
+  <div class="card"><h3>Stress & Mental Load</h3><p>Helps calm inner tension and restore balance.</p></div>
+  <div class="card"><h3>Personal Development</h3><p>Deepening inner stability, focus, and clarity in everyday life.</p></div>
+  <div class="card"><h3>Self-Confidence</h3><p>Strengthening inner sense of security and stability in various life situations.</p></div>
+</div>
+</section>
+
+<section>
+<h2>What a Hypnotherapy Session Looks Like</h2>
+<div class="cards">
+  <div class="card">
+    <h3>Safe and Trustworthy Environment</h3>
+    <h3>Sessions in Studio or Online, with Recording Option</h3>
+    <p>Sessions can take place in a calm, private studio space or online via video call for clients abroad. Each session can be recorded and made available for later review.</p>
+  </div>
+  <div class="card"><h3>Focused Work Towards Your Goals</h3><p>Hypnotherapy and regression techniques help you focus on clarity, focus, and inner stability.</p></div>
+  <div class="card"><h3>Practical, Applicable Results</h3><p>Sessions provide concrete tools that can be used in daily life and decision-making.</p></div>
+</div>
+</section>
+
+<section id="booking-form" style="padding:50px 20px;background:#f9f9f9;text-align:center;">
+<h2 style="font-size:2em;margin-bottom:30px;color:#333;">Schedule a Session</h2>
+
+<div class="cards" style="display:flex;flex-wrap:wrap;justify-content:center;gap:20px;">
+
+<!-- Booking Form Card -->
+<div class="card" style="max-width:400px;margin:0 auto;padding:25px;border-radius:15px;background:white;box-shadow:0 6px 20px rgba(0,0,0,0.1);">
+  <h3 style="color:#25D366;">Book a Consultation</h3>
+  <p style="color:#555;">Fill out the short form to schedule a session or request more information. Replies will go directly to me.</p>
+
+  <form action="https://formspree.io/f/mkoqowee" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required
+    style="width:100%;padding:10px;margin:10px 0;border-radius:8px;border:1px solid #ccc;">
+    <input type="email" name="email" placeholder="Your Email" required
+    style="width:100%;padding:10px;margin:10px 0;border-radius:8px;border:1px solid #ccc;">
+    <textarea name="message" placeholder="Your Message" required
+    style="width:100%;padding:10px;margin:10px 0;border-radius:8px;border:1px solid #ccc;"></textarea>
+    <button type="submit"
+    style="padding:15px 30px;background:#25D366;color:white;border-radius:10px;border:none;font-weight:bold;margin-top:10px;cursor:pointer;">
+      Send
+    </button>
+  </form>
+</div>
+
+<!-- WhatsApp Contact Card -->
+<div class="card" style="flex:1;min-width:280px;max-width:350px;padding:25px;border-radius:15px;background:white;box-shadow:0 6px 20px rgba(0,0,0,0.1);">
+  <h3 style="color:#25D366;">Send a WhatsApp Message</h3>
+  <p style="color:#555;">You can immediately send a message via WhatsApp and schedule a session.</p>
+  <a href="https://wa.me/+381628538933" target="_blank"
+     style="display:inline-block;padding:15px 30px;background:#25D366;color:white;border-radius:10px;text-decoration:none;font-weight:bold;margin-top:15px;">
+     Send a Message
+  </a>
+</div>
+
+</div>
+</section>
+
+<footer>
+<p>Follow me on social media:</p>
+<a href="#"><i class="fa-brands fa-facebook"></i></a>
+<a href="#"><i class="fa-brands fa-instagram"></i></a>
+<a href="#"><i class="fa-brands fa-linkedin"></i></a>
+<p>&copy; 2026 HipnoFlow</p>
+<a href="index.html" style="color:white;display:block;margin-top:10px;">English</a>
+</footer>
+
+<script>
+// Smooth scroll to booking form
+document.getElementById('bookBtn').addEventListener('click', function(){
+    const formSection = document.getElementById('booking-form');
+    const headerOffset = 100; // adjust if header overlaps
+    const elementPosition = formSection.getBoundingClientRect().top + window.pageYOffset;
+    const offsetPosition = elementPosition - headerOffset;
+
+    window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth"
+    });
+});
+</script>
+
+</body>
+</html>
