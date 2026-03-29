@@ -37,10 +37,9 @@ header div a{display:inline-block;margin:0 10px;font-size:14px;}
 <body>
 
 <header>
-
-  <!-- LOGO (DODATO) -->
+  <!-- Logo -->
   <div style="position:absolute;top:20px;left:20px;">
-    <img src="logo.png" style="height:60px;">
+    <img src="logo.png" alt="HipnoFlow logo" style="height:60px;">
   </div>
 
   <!-- Jezički meni -->
@@ -48,7 +47,6 @@ header div a{display:inline-block;margin:0 10px;font-size:14px;}
     <a href="index.html" style="color:white;text-decoration:none;font-weight:bold;margin-right:15px;">Srpski</a>
     <a href="index-en.html" style="color:white;text-decoration:none;font-weight:bold;">English</a>
   </div>
-
   <h1>Hipnoterapija & Regresoterapija</h1>
   <p>Jasnoća uma, stabilnost u odlukama i kontinuirani lični razvoj.</p>
   <button id="bookBtn">Zakaži konsultaciju</button>
@@ -56,22 +54,18 @@ header div a{display:inline-block;margin:0 10px;font-size:14px;}
 
 <section>
 <h2>O meni</h2>
-
-<!-- FOTOGRAFIJA (DODATA) -->
-<img src="gordana.png" alt="Gordana" 
-style="width:250px;border-radius:20px;margin-bottom:20px;box-shadow:0 10px 30px rgba(0,0,0,0.2);">
-
+<img src="gordana.png" alt="Gordana" style="width:250px;max-width:90%;border-radius:20px;margin-bottom:20px;box-shadow:0 10px 30px rgba(0,0,0,0.2);">
 <p>Moje ime je Gordana Srećković. Sertifikovani sam hipnoterapeut i regresoterapeut. Pružam podršku ljudima koji žele da prodube jasnoću, fokus i unutrašnju stabilnost.</p>
-<p>Hipnoterapija je prostor za mirno i usredsređeno istraživanje sopstvenih potencijala, jasnoće u donošenju odluka i stabilnosti u svakodnevnom životu.</p>
+<p>Hipnoterapija je prostor za mirno i usredsređeno istraživanje sopstvenog potencijala, jasnoće u donošenju odluka i stabilnosti u svakodnevnom životu.</p>
 </section>
 
 <section>
 <h2>Oblasti u kojima hipnoterapija može pomoći</h2>
 <div class="cards">
-  <div class="card"><h3>Fokus i donošenje odluka</h3><p>Jasnije sagledavanje i stabilnost u važnim ličnim i poslovnim odlukama.</p></div>
-  <div class="card"><h3>Stres i mentalno opterećenje</h3><p>Pomaže u smanjenju unutrašnje napetosti i vraćanju balansa.</p></div>
+  <div class="card"><h3>Fokus i donošenje odluka</h3><p>Jasniji uvid i stabilnost u važnim ličnim i poslovnim odlukama.</p></div>
+  <div class="card"><h3>Stres i mentalno opterećenje</h3><p>Pomaže da se umiri unutrašnja napetost i povrati ravnoteža.</p></div>
   <div class="card"><h3>Lični razvoj</h3><p>Produbljivanje unutrašnje stabilnosti, fokusa i jasnoće u svakodnevnom životu.</p></div>
-  <div class="card"><h3>Samopouzdanje</h3><p>Jačanje unutrašnjeg osećaja sigurnosti u različitim životnim situacijama.</p></div>
+  <div class="card"><h3>Samopouzdanje</h3><p>Jačanje unutrašnjeg osećaja sigurnosti i stabilnosti u različitim životnim situacijama.</p></div>
 </div>
 </section>
 
@@ -80,11 +74,11 @@ style="width:250px;border-radius:20px;margin-bottom:20px;box-shadow:0 10px 30px 
 <div class="cards">
   <div class="card">
     <h3>Sigurno i pouzdano okruženje</h3>
-    <h3>Seanse u studiju ili online uz mogućnost snimanja</h3>
-    <p>Seanse se održavaju u mirnom i privatnom prostoru ili online putem video poziva. Svaka seansa može biti snimljena za kasniji pregled.</p>
+    <h3>Seanse u studiju ili online, uz mogućnost snimanja</h3>
+    <p>Seanse se mogu održavati u mirnom, privatnom prostoru studija ili online putem video poziva za klijente iz inostranstva. Svaka seansa može biti snimljena i dostupna za kasniji pregled.</p>
   </div>
-  <div class="card"><h3>Fokusiran rad ka cilju</h3><p>Tehnike pomažu usmeravanje ka jasnoći, fokusu i unutrašnjoj stabilnosti.</p></div>
-  <div class="card"><h3>Praktični rezultati</h3><p>Dobijate konkretne alate primenjive u svakodnevnom životu.</p></div>
+  <div class="card"><h3>Fokusiran rad ka vašim ciljevima</h3><p>Tehnike hipnoterapije i regresoterapije pomažu vam da se usmerite na jasnoću, fokus i unutrašnju stabilnost.</p></div>
+  <div class="card"><h3>Praktični, primenljivi rezultati</h3><p>Seanse pružaju konkretne alate koji se mogu koristiti u svakodnevnom životu i donošenju odluka.</p></div>
 </div>
 </section>
 
@@ -93,26 +87,32 @@ style="width:250px;border-radius:20px;margin-bottom:20px;box-shadow:0 10px 30px 
 
 <div class="cards" style="display:flex;flex-wrap:wrap;justify-content:center;gap:20px;">
 
+<!-- Booking Form Card -->
 <div class="card" style="max-width:400px;margin:0 auto;padding:25px;border-radius:15px;background:white;box-shadow:0 6px 20px rgba(0,0,0,0.1);">
   <h3 style="color:#25D366;">Zakažite konsultaciju</h3>
-  <p style="color:#555;">Popunite formu i bićete kontaktirani.</p>
+  <p style="color:#555;">Popunite kratku formu kako biste zakazali seansu ili zatražili više informacija. Odgovori će stići direktno meni.</p>
 
   <form action="https://formspree.io/f/mkoqowee" method="POST">
-    <input type="text" name="name" placeholder="Vaše ime" required>
-    <input type="email" name="email" placeholder="Vaš email" required>
-    <textarea name="message" placeholder="Vaša poruka" required></textarea>
-    <button type="submit" style="padding:15px 30px;background:#25D366;color:white;border-radius:10px;border:none;font-weight:bold;margin-top:10px;cursor:pointer;">
+    <input type="text" name="name" placeholder="Vaše ime" required
+    style="width:100%;padding:10px;margin:10px 0;border-radius:8px;border:1px solid #ccc;">
+    <input type="email" name="email" placeholder="Vaš email" required
+    style="width:100%;padding:10px;margin:10px 0;border-radius:8px;border:1px solid #ccc;">
+    <textarea name="message" placeholder="Vaša poruka" required
+    style="width:100%;padding:10px;margin:10px 0;border-radius:8px;border:1px solid #ccc;"></textarea>
+    <button type="submit"
+    style="padding:15px 30px;background:#25D366;color:white;border-radius:10px;border:none;font-weight:bold;margin-top:10px;cursor:pointer;">
       Pošalji
     </button>
   </form>
 </div>
 
-<div class="card">
-  <h3 style="color:#25D366;">Pošaljite poruku</h3>
-  <p>Možete poslati poruku putem WhatsApp-a.</p>
+<!-- WhatsApp Contact Card -->
+<div class="card" style="flex:1;min-width:280px;max-width:350px;padding:25px;border-radius:15px;background:white;box-shadow:0 6px 20px rgba(0,0,0,0.1);">
+  <h3 style="color:#25D366;">Pošaljite WhatsApp poruku</h3>
+  <p style="color:#555;">Možete odmah poslati poruku putem WhatsApp-a i zakazati seansu.</p>
   <a href="https://wa.me/+381628538933" target="_blank"
-  style="display:inline-block;padding:15px 30px;background:#25D366;color:white;border-radius:10px;text-decoration:none;font-weight:bold;">
-  Pošalji poruku
+     style="display:inline-block;padding:15px 30px;background:#25D366;color:white;border-radius:10px;text-decoration:none;font-weight:bold;margin-top:15px;">
+     Pošalji poruku
   </a>
 </div>
 
@@ -120,7 +120,7 @@ style="width:250px;border-radius:20px;margin-bottom:20px;box-shadow:0 10px 30px 
 </section>
 
 <footer>
-<p>Prati me na društvenim mrežama:</p>
+<p>Pratite me na društvenim mrežama:</p>
 <a href="#"><i class="fa-brands fa-facebook"></i></a>
 <a href="#"><i class="fa-brands fa-instagram"></i></a>
 <a href="#"><i class="fa-brands fa-linkedin"></i></a>
@@ -129,9 +129,10 @@ style="width:250px;border-radius:20px;margin-bottom:20px;box-shadow:0 10px 30px 
 </footer>
 
 <script>
+// Smooth scroll to booking form
 document.getElementById('bookBtn').addEventListener('click', function(){
     const formSection = document.getElementById('booking-form');
-    const headerOffset = 100;
+    const headerOffset = 100; // adjust if header overlaps
     const elementPosition = formSection.getBoundingClientRect().top + window.pageYOffset;
     const offsetPosition = elementPosition - headerOffset;
 
